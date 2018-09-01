@@ -43,3 +43,7 @@ alias -g NSL='&& notify-send -u low'
 alias -g UPL='NSC "Upload completed"'
 
 source $HOME/.zprofile
+
+if ! ssh-add -l > /dev/null; then
+    ssh-add $HOME/.ssh/id_ed25519
+fi

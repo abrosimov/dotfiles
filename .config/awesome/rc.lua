@@ -440,6 +440,13 @@ globalkeys = gears.table.join(
             awful.spawn("/opt/clion/bin/clion.sh")
         end,
         {description = "run CLion", group = "ABR"}
+    ),
+    awful.key(
+        {modkey }, "F12",
+        function ()
+            awful.util.spawn("xscreensaver-command -lock")
+        end,
+        {description = "lock screen", group = "ABR"}
     )
 )
 
@@ -668,18 +675,4 @@ client.connect_signal("focus", function(c) c.border_color = beautiful.border_foc
 client.connect_signal("unfocus", function(c) c.border_color = beautiful.border_normal end)
 -- }}}
 
-do
-    -- TODO: think about graceful stopping this processes
-    local startup_cmds = {
-        "nm-applet",
-        "urxvtd",
-        "xxkb", -- see TODO above. xxkb doesn't exit on awesome reload. you have to fix it
-        "setxkbmap us,ru -option 'grp:caps_toggle,grp_led:scroll'",
-        "xscreensaver -no-splash",
-        "wmname Sawfish"
-    }
-
-    for _, cmd in pairs(startup_cmds) do
-        awful.spawn(cmd)
-    end
-end
+awful.spawn.with_shell("~/.config/awesome/autorun.sh")

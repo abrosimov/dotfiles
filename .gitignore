@@ -3,6 +3,8 @@ packages/
 .zsh_history
 .bash_history
 .key_history
+.lesshst
+.ssh/
 .vim/
 .fontconfig/
 .antigen/
@@ -25,7 +27,6 @@ packages/
 .local/
 .gnupg/
 .viminfo
-.mutt/accounts
 .CLion2018.2/
 .GoLand2018.2/
 .IntelliJIdea2018.2/
@@ -36,6 +37,9 @@ go/
 .sudo_as_admin_successful
 .java/
 .npm/
+testing/
+Work/
+WorkCT/
 
 .config/*
 !.config/awesome/

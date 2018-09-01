@@ -1,3 +1,23 @@
 [user]
 	email = abrosimov-kirill@yandex.ru
 	name = Abrosimov Kirill
+
+[gc]
+    auto = 0
+
+[color]
+    ui = auto
+    grep = always
+
+[core]
+    mergeoptions = --no-edit
+    eol = lf
+
+[apply]
+    whitespaces = nowarn
+
+[pull]
+    rebase = always
+
+[rebase]
+    stash = always
