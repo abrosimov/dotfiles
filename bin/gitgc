@@ -1,0 +1,22 @@
+#!/bin/bash
+REPOS=(
+    "$HOME/Work/badoo"
+    "$HOME"
+)
+
+for rep in ${REPOS[*]}; do 
+    if [ ! -d $rep ]; then
+        continue
+    fi
+
+    pushd $rep
+        echo "Start GC for $rep"    
+        git tag | xargs git tag -d; git branch -a | grep -Eo "origin/build_.*" | xargs git branch -rd
+        git remote prune origin
+        git prune
+        git gc --aggressive
+        echo "GC for $rep finished"
+    popd
+done
+
+exit 0;
