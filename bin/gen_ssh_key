@@ -1,4 +1,5 @@
 #!/bin/bash
+# based on https://blog.g3rt.nl/upgrade-your-ssh-keys.html
 
 if [ $# -ne 1 ]; then
     echo "Usage: $0 <key_name>"
