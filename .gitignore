@@ -25,3 +25,17 @@ packages/
 .local/
 .gnupg/
 .viminfo
+.mutt/accounts
+.CLion2018.2/
+.GoLand2018.2/
+.IntelliJIdea2018.2/
+.PhpStorm2018.2/
+.PyCharm2018.2/
+Projects/
+go/
+.sudo_as_admin_successful
+.java/
+.npm/
+
+.config/*
+!.config/awesome/

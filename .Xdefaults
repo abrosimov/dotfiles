@@ -1,0 +1,81 @@
+Xft.dpi: 96
+Xft.hinting: true
+Xft.antialias: true
+Xft.hintstyle: hintfull
+Xft.rgba: rgb
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+! URxvt settings
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+URxvt*foreground: white
+URxvt*path: /home/kabrosimov/.config/awesome/wallpapers
+URxvt*background: #222222
+URxvt*font: xft:Inconsolata\ for\ Powerline:pixelsize=18:antialias=true
+
+
+URxvt*geometry: 80x25
+
+URxvt.perl-lib: .urxvt/
+! tabbedex настрой
+URxvt.perl-ext-common: default,matcher,tabbed
+
+URxvt.url-launcher: /usr/bin/google-chrome
+
+URxvt*tintColor: Gray
+!URxvt*transparent: true
+!URxvt*shading: 20
+URxvt*fading: 10
+URxvt*fadeColor: purple
+URxvt*saveLines: 10000
+URxvt*termName: xterm
+URxvt*scrollBar: false
+URxvt*visualBell: false
+URxvt*urgentOnBell: false
+URxvt*border: 1
+! do not scroll with output
+URxvt*scrollTtyOutput: false
+
+! scroll in relation to buffer (with mouse scroll or Shift+Page Up)
+URxvt*scrollWithBuffer: true
+
+! scroll back to the bottom on keypress
+URxvt*scrollTtyKeypress: true
+! Настройка сочетаний Ctrl(+Shift) со стрелками.
+URxvt*keysym.C-Left: \033[1;5D
+URxvt*keysym.C-Right: \033[1;5C
+URxvt*keysym.C-Down: \033[1;5B
+URxvt*keysym.C-Up: \033[1;5A
+URxvt*keysym.C-S-Left: \033[1;6D
+URxvt*keysym.C-S-Right: \033[1;6C
+URxvt*keysym.C-S-Up: \033[1;6B
+URxvt*keysym.C-S-Down: \033[1;6A
+URxvt*keysym.Home: \033[7~
+URxvt.urlLauncher:  firefox
+URxvt.matcher.button:   1
+URxvt.colorUL:      #86a2be
+!Colors
+! Black
+URxvt*color0:               #333333
+URxvt*color8:               #5E5E5E
+! Red
+URxvt*color1:               #C35365
+URxvt*color9:               #D7786C
+! Green
+URxvt*color2:               #8D983F
+URxvt*color10:              #A7D671
+! Yellow
+URxvt*color3:               #E1DB70
+URxvt*color11:              #F5F19A
+! Blue
+URxvt*color4:               #3D77A1
+URxvt*color12:              #72AFCC
+! Magenta
+URxvt*color5:               #CC74AC
+URxvt*color13:              #EDAED6
+! Cyan
+URxvt*color6:               #6B9D98
+URxvt*color14:              #ACCDCA
+! White
+URxvt*color7:               #dbdbdb
+URxvt*color15:              #fbfbfb
